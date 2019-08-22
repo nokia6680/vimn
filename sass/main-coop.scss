@@ -1,0 +1,13 @@
+.main-coop {
+  @include container;
+  @include flex-setting(column, flex-start, center);
+
+  &__title {
+    @include font-setting($secondary-font, 2em, 1.2, 400, rgba(4, 25, 32, 0.5));
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 16px;
+    margin-top: 34px;
+  }
+}

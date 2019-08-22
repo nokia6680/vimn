@@ -1,0 +1,5 @@
+.header {
+  @include flex-setting(column, flex-start, center);
+
+  width: 100%;
+}

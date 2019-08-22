@@ -1,0 +1,33 @@
+.main-intro {
+  width: 100%;
+
+  background-color: #f8f8f8;
+
+  padding-top: 18px;
+  padding-bottom: 57px;
+
+  &__wrapper {
+    @include container;
+    @include flex-setting(column, flex-start, flex-start);
+  }
+
+  &__title {
+    @include font-setting($secondary-font, 2em, 1.2, 700, $text-dark);
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    width: 100%;
+
+    @include flex-setting(row, space-between, flex-start);
+  }
+
+  &__description {
+    @include font-setting($primary-font, 0.913em, 1.5em, 400, $text-dark);
+    max-width: 592px;
+    margin: 0;
+  }
+}

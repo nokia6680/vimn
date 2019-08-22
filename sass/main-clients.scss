@@ -1,0 +1,22 @@
+.main-clients {
+  width: 100%;
+
+  padding-top: 18px;
+  padding-bottom: 32px;
+
+  background-color: rgba(163, 225, 246, 0.45);
+
+  &__wrapper {
+    @include container;
+    @include flex-setting(column, flex-start, center);
+  }
+
+  &__title {
+    @include font-setting($secondary-font, 2em, 1.2, 400, rgba(4, 25, 32, 0.5));
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}

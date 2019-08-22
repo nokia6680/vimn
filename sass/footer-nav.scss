@@ -1,0 +1,27 @@
+.footer-nav {
+  width: 100%;
+
+  position: relative;
+  padding-top: 16px;
+
+  &__wrapper {
+    @include container;
+    @include flex-setting(row, flex-start, flex-start);
+  }
+
+  &__contacts {
+    @include font-setting($secondary-font, 1.125em, 1.2, 700, $text-secondary);
+
+    display: inline-flex;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    text-decoration: none;
+
+    &:hover {
+      color: $coop-link;
+      transition: 0.1s ease-in;
+    }
+  }
+}
