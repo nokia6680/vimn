@@ -63,6 +63,8 @@
 					<a class="nav-list__link" href="#" target="_self" title="Контакты">Контакты</a>
 				</li>
 			</ul>
+			<!--Search-->
+			<div class="header-nav__search"></div>
 		</nav>
 		<div class="header__intro header-intro">
 			<div class="header-intro__slider intro-slider">
@@ -189,14 +191,7 @@
 			<ul class="main-coop__list coop-list">
 				<!--Single item-->
 				<li class="coop-list__item">
-					<picture class="coop-list__item-frame">
-						<source media="(min-width: 1220px)" srcset="img/coop-1-big.webp" type="image/webp" />
-						<source media="(min-width: 1220px)" srcset="img/coop-1-big.png" />
-						<source media="(min-width: 768px)" srcset="img/coop-1-med.webp" type="image/webp" />
-						<source media="(min-width: 768px)" srcset="img/coop-1-med.png" />
-						<source srcset="img/coop-1-sm.webp" type="image/webp" />
-						<img class="coop-list__item-pic" src="img/coop-1-sm.png" alt="Дистрибуция каналов"  />
-					</picture>
+					<img class="coop-list__item-pic" src="img/coop-1.svg" alt="Дистрибуция каналов"  />
 					<div class="coop-list__info">
 						<h3 class="coop-list__info-title">Дистрибуция каналов</h3>
 						<p class="coop-list__info-description">Коммерческое сотрудничество по вещанию телеканалов в пакетах кабельных и спутниковых операторов</p>
@@ -205,14 +200,7 @@
 				</li>
 				<!--Single item-->
 				<li class="coop-list__item">
-					<picture class="coop-list__item-frame">
-						<source media="(min-width: 1220px)" srcset="img/coop-2-big.webp" type="image/webp" />
-						<source media="(min-width: 1220px)" srcset="img/coop-2-big.png" />
-						<source media="(min-width: 768px)" srcset="img/coop-2-med.webp" type="image/webp" />
-						<source media="(min-width: 768px)" srcset="img/coop-2-med.png" />
-						<source srcset="img/coop-2-sm.webp" type="image/webp" />
-						<img class="coop-list__item-pic" src="img/coop-2-sm.png" alt="Рекламные возможности"  />
-					</picture>
+					<img class="coop-list__item-pic" src="img/coop-2.svg" alt="Рекламные возможности"  />
 					<div class="coop-list__info">
 						<h3 class="coop-list__info-title">Рекламные возможности</h3>
 						<p class="coop-list__info-description">Размещение рекламы на онлайн-площадках, интеграция в мероприятия и спецпроекты</p>
@@ -221,14 +209,7 @@
 				</li>
 				<!--Single item-->
 				<li class="coop-list__item">
-					<picture class="coop-list__item-frame">
-						<source media="(min-width: 1220px)" srcset="img/coop-3-big.webp" type="image/webp" />
-						<source media="(min-width: 1220px)" srcset="img/coop-3-big.png" />
-						<source media="(min-width: 768px)" srcset="img/coop-3-med.webp" type="image/webp" />
-						<source media="(min-width: 768px)" srcset="img/coop-3-med.png" />
-						<source srcset="img/coop-3-sm.webp" type="image/webp" />
-						<img class="coop-list__item-pic" src="img/coop-3-sm.png" alt="Лицензирование"  />
-					</picture>
+					<img class="coop-list__item-pic" src="img/coop-3.svg" alt="Лицензирование"  />
 					<div class="coop-list__info">
 						<h3 class="coop-list__info-title">Лицензирование</h3>
 						<p class="coop-list__info-description">Продажа лицензии на использование широко известных брендов для детей и взрослых</p>
@@ -237,14 +218,7 @@
 				</li>
 				<!--Single item-->
 				<li class="coop-list__item">
-					<picture class="coop-list__item-frame">
-						<source media="(min-width: 1220px)" srcset="img/coop-4-big.webp" type="image/webp" />
-						<source media="(min-width: 1220px)" srcset="img/coop-4-big.png" />
-						<source media="(min-width: 768px)" srcset="img/coop-4-med.webp" type="image/webp" />
-						<source media="(min-width: 768px)" srcset="img/coop-4-med.png" />
-						<source srcset="img/coop-4-sm.webp" type="image/webp" />
-						<img class="coop-list__item-pic" src="img/coop-4-sm.png" alt="Распространение контента"  />
-					</picture>
+					<img class="coop-list__item-pic" src="img/coop-4.svg" alt="Распространение контента"  />
 					<div class="coop-list__info">
 						<h3 class="coop-list__info-title">Распространение контента</h3>
 						<p class="coop-list__info-description">Продажа высококачественного контента собственного производства цифровым медиа и другим телеканалам</p>
@@ -295,6 +269,7 @@
 		<section class="main__news main-news">
 			<h2 class="main-news__title">Последние новости</h2>
 			<ul class="main-news__list news-list">
+				<!--Single item-->
 				<li class="news-list__item">
 					<picture class="news-list__item-frame">
 						<source media="(min-width: 1220px)" srcset="img/news-1-big.webp" type="image/webp" />
@@ -310,6 +285,50 @@
 								<use xlink:href="#icon-news"></use>
 							</svg>
 							Новости каналов
+						</span>
+						<time pubdate datetime="2019-05-25">25.05.2019</time>
+					</div>
+					<p class="news-list__description">Премьеры июня на Paramount Comedy: ситком «Старая школа» и новые эпизоды сериалов «Бруклин 9-9» и «Мамаша»</p>
+					<a class="news-list__link" href="#" target="_self" title="Читать далее">Читать далее</a>
+				</li>
+				<!--Single item-->
+				<li class="news-list__item">
+					<picture class="news-list__item-frame">
+						<source media="(min-width: 1220px)" srcset="img/event-1-big.webp" type="image/webp" />
+						<source media="(min-width: 1220px)" srcset="img/event-1-big.png" />
+						<source media="(min-width: 768px)" srcset="img/event-1-med.webp" type="image/webp" />
+						<source media="(min-width: 768px)" srcset="img/event-1-med.png" />
+						<source srcset="img/event-1-sm.webp" type="image/webp" />
+						<img class="news-list__item-pic" src="img/event-1-sm.png" alt="Новость такая то"  />
+					</picture>
+					<div class="news-list__info">
+						<span class="news-list__info-type news-list__info-type--event">
+							<svg class="news-list__item-icon news-list__item-icon--event" width="16" height="16">
+								<use xlink:href="#icon-event"></use>
+							</svg>
+							Наши мероприятия
+						</span>
+						<time pubdate datetime="2019-05-25">25.05.2019</time>
+					</div>
+					<p class="news-list__description">Премьеры июня на Paramount Comedy: ситком «Старая школа» и новые эпизоды сериалов «Бруклин 9-9» и «Мамаша»</p>
+					<a class="news-list__link" href="#" target="_self" title="Читать далее">Читать далее</a>
+				</li>
+				<!--Single item-->
+				<li class="news-list__item">
+					<picture class="news-list__item-frame">
+						<source media="(min-width: 1220px)" srcset="img/blog-1-big.webp" type="image/webp" />
+						<source media="(min-width: 1220px)" srcset="img/blog-1-big.png" />
+						<source media="(min-width: 768px)" srcset="img/blog-1-med.webp" type="image/webp" />
+						<source media="(min-width: 768px)" srcset="img/blog-1-med.png" />
+						<source srcset="img/blog-1-sm.webp" type="image/webp" />
+						<img class="news-list__item-pic" src="img/blog-1-sm.png" alt="Новость такая то"  />
+					</picture>
+					<div class="news-list__info">
+						<span class="news-list__info-type news-list__info-type--blog">
+							<svg class="news-list__item-icon news-list__item-icon--blog" width="16" height="16">
+								<use xlink:href="#icon-blog"></use>
+							</svg>
+							Наш блог
 						</span>
 						<time pubdate datetime="2019-05-25">25.05.2019</time>
 					</div>
