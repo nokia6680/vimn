@@ -6,4 +6,9 @@
   padding-bottom: 84px;
 
   @include flex-setting(column, flex-start, center);
+
+  background-image: url('../img/footer-bg.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

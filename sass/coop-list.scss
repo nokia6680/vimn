@@ -20,14 +20,29 @@
     padding-right: 23px;
     padding-bottom: 25px;
     padding-left: 50px;
+
+    &:hover {
+      .coop-list__wrap {
+        background-image: linear-gradient(180deg, #2abbeb 0%, #97ddf5 100%);
+        transition: 0.1s ease-in;
+      }
+
+      .coop-list__info-link {
+        color: #ffffff;
+        background-color: $coop-link;
+        transition: 0.2s ease-in;
+      }
+    }
   }
 
   &__wrap {
     @include flex-setting(column, center, center);
-    width: 50%;
-    height: auto;
+    width: 176px;
+    height: 176px;
 
-    padding-top: 5%;
+    background-image: linear-gradient(180deg, #aae2f6 0%, #eaf0f3 100%);
+
+    border-radius: 50%;
   }
 
   &__info {
@@ -66,12 +81,6 @@
 
       width: 128px;
       height: 24px;
-
-      &:hover {
-        color: #ffffff;
-        background-color: $coop-link;
-        transition: 0.2s ease-in;
-      }
     }
   }
 }
