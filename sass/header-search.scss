@@ -1,0 +1,47 @@
+.header-search {
+  width: auto;
+
+  @include flex-setting(column, flex-start, flex-end);
+
+  position: relative;
+
+  margin-left: auto;
+  margin-right: 0;
+
+  &__button {
+    @include flex-setting(column, center, center);
+
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 100%;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  &__form {
+    position: absolute;
+
+    bottom: -30px;
+    right: -20px;
+
+    background-color: transparent;
+  }
+
+  &__input {
+    @include font-setting($secondary-font, 0.875rem, 1, 400, #fff);
+
+    border: 1px solid #fff;
+    border-radius: 21px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    height: 24px;
+    width: 220px;
+
+    padding-left: 0.625rem;
+
+    cursor: text;
+    outline: none;
+  }
+}

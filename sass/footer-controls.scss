@@ -1,0 +1,55 @@
+.footer-controls {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include flex-setting(row, flex-start, center);
+
+  &__item {
+    width: auto;
+
+    margin-right: 32px;
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+
+      width: 2px;
+      height: 8px;
+
+      background-color: #ffffff;
+
+      top: 50%;
+      transform: translateY(-50%);
+
+      right: -15px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    width: auto;
+    height: 100%;
+
+    @include flex-setting(column, center, center);
+    @include font-setting($secondary-font, 0.75em, 1, 400, $text-secondary);
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $coop-link;
+      transition: 0.1s ease-in;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.footer-subscribe {
+  width: auto;
+
+  @include flex-setting(column, flex-start, flex-start);
+
+  &__title {
+    @include font-setting($secondary-font, 0.875em, 1.2, 700, $text-secondary);
+
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    max-width: 355px;
+  }
+}

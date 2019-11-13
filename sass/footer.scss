@@ -3,12 +3,25 @@
 
   background-color: #041920;
 
-  padding-bottom: 84px;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 
-  @include flex-setting(column, flex-start, center);
+  @include flex-setting(column, center, center);
 
   background-image: url('../img/footer-bg.png');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__logo {
+    align-self: center;
+    margin-bottom: 1.625rem;
+  }
+
+  &__container {
+    @include flex-setting(column, flex-start, flex-start);
+
+    width: 100%;
+    max-width: 1216px;
+  }
 }

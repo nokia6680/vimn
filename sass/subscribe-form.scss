@@ -1,0 +1,47 @@
+.subscribe-form {
+  @include flex-setting(row, flex-start, flex-end);
+
+  width: 100%;
+
+  &__item {
+    margin: 0;
+    @include flex-setting(column, flex-start, flex-start);
+  }
+
+  &__label {
+    @include font-setting($secondary-font, 0.75rem, 1, 400, #fff);
+    margin-bottom: 0.25rem;
+  }
+
+  &__input {
+    @include font-setting($secondary-font, 0.75rem, 1, 400, #fff);
+
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.06);
+
+    height: 32px;
+    width: 200px;
+
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+
+    margin-right: 1.5rem;
+
+    cursor: text;
+    outline: none;
+  }
+
+  &__submit {
+    @include flex-setting(column, center, center);
+    @include font-setting($secondary-font, 0.75rem, 1, 400, #78194d);
+
+    border: 1px solid #78194d;
+    background-color: transparent;
+
+    width: 168px;
+    height: 32px;
+
+    cursor: pointer;
+    outline: none;
+  }
+}
