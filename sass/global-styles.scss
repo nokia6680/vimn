@@ -35,12 +35,20 @@ body {
   overflow-x: hidden;
   position: relative;
 
+  overflow-x: hidden;
+
   color: #000000;
   font-family: $primary-font;
 
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+
+.body {
+  &.active {
+    overflow: hidden;
+  }
 }
 
 .section {

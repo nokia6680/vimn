@@ -3,7 +3,7 @@
   position: relative;
 
   margin: 0 auto;
-  padding: 0 104px;
+  padding: 0 1.5rem;
 
   &:not(.slick-initialized) {
     visibility: hidden;
@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    height: 168px;
+    height: 56px;
   }
 
   .slick-slide div {
@@ -24,8 +24,8 @@
   .next-2 {
     position: absolute;
 
-    width: 24px;
-    height: 40px;
+    width: 11px;
+    height: 18px;
 
     cursor: pointer;
     outline: none;
@@ -47,7 +47,7 @@
 
     top: 50%;
     transform: translateY(-50%);
-    left: 24px;
+    left: 10px;
   }
 
   .next-2 {
@@ -58,13 +58,43 @@
 
     top: 50%;
     transform: translateY(-50%);
-    right: 24px;
+    right: 10px;
   }
 
   &__item {
-    width: 176px !important;
-    height: 168px;
+    width: 56px !important;
+    height: 56px;
 
     background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(204, 204, 204, 0.15);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .clients-slider {
+    padding: 0 104px;
+
+    &:not(.slick-initialized) {
+      height: 140px;
+    }
+
+    .prev-2,
+    .next-2 {
+      width: 24px;
+      height: 40px;
+    }
+
+    .prev-2 {
+      left: 24px;
+    }
+
+    .next-2 {
+      right: 24px;
+    }
+
+    &__item {
+      width: 140px !important;
+      height: 140px;
+    }
   }
 }

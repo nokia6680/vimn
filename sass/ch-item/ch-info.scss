@@ -1,0 +1,69 @@
+.ch-info {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, flex-start);
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  margin-bottom: 2.75rem;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    @include flex-setting(column, flex-start, flex-start);
+    width: 100%;
+
+    &-title {
+      @include font-setting($secondary-font, 1rem, 1, 700, $text-dark);
+
+      margin: 0;
+      margin-bottom: 0.75rem;
+
+      text-transform: uppercase;
+    }
+
+    &-description {
+      @include font-setting($primary-font, 0.875rem, 1.3, 400, $text-dark);
+
+      margin: 0;
+      margin-bottom: 1.625rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ch-info {
+    width: 100%;
+    max-width: 980px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-bottom: 3.875rem;
+
+    &__list {
+      width: 100%;
+
+      @include flex-setting(row, space-between, flex-start);
+    }
+
+    &__item {
+      max-width: 476px;
+
+      &-title {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin-bottom: 1.5rem;
+      }
+
+      &-description {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -30,3 +30,42 @@
 @import "sitemap-list.scss";
 @import "footer-pages.scss";
 @import "page-list.scss";
+/*blog page*/
+@import "sass/blog/breadcrumbs.scss";
+@import "sass/blog/blog.scss";
+@import "sass/blog/blog-head.scss";
+@import "sass/blog/tag-list.scss";
+@import "sass/blog/blog-item.scss";
+@import "sass/blog/footer-channel.scss";
+/*blog-item*/
+@import "sass/blog-item/article.scss";
+@import "sass/blog-item/article-head.scss";
+@import "sass/blog-item/article-body.scss";
+@import "sass/blog-item/comm.scss";
+@import "sass/blog-item/social-list.scss";
+@import "sass/blog-item/comm-form.scss";
+@import "sass/blog-item/posted.scss";
+@import "sass/blog-item/posted-list.scss";
+/*Channels page*/
+@import "sass/channels/channels.scss";
+@import "sass/channels/ch-item.scss";
+@import "sass/channels/ch-list.scss";
+/*Channel item page*/
+@import "sass/ch-item/intro-contacts.scss";
+@import "sass/ch-item/advantages.scss";
+@import "sass/ch-item/advantages-list.scss";
+@import "sass/ch-item/ch-info.scss";
+@import "sass/ch-item/ch-details.scss";
+@import "sass/ch-item/animation.scss";
+@import "sass/ch-item/ani-item.scss";
+/*distribution page*/
+@import "sass/distribution/distribution-team.scss";
+@import "sass/distribution/team-info.scss";
+@import "sass/distribution/contacts.scss";
+@import "sass/distribution/cont-form.scss";
+@import "sass/distribution/foreign-list.scss";
+/*advert page styles*/
+@import "sass/adv/ability.scss";
+@import "sass/adv/ability-list.scss";
+@import "sass/adv/ability-content.scss";
+@import "sass/adv/ability-wrap.scss";

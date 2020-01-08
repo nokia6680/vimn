@@ -4,20 +4,75 @@
   margin: 0;
   padding: 0;
 
-  margin-bottom: 24px;
+  width: 100%;
+
+  margin-bottom: 1.25rem;
+
+  position: relative;
+
+  .news-prev,
+  .news-next {
+    position: absolute;
+
+    width: 6px;
+    height: 12px;
+
+    cursor: pointer;
+    outline: none;
+
+    opacity: 0.7;
+
+    z-index: 10;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .news-prev {
+    background-image: url('../img/arr-left-blue.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+  }
+
+  .news-next {
+    background-image: url('../img/arr-right-blue.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+  }
 
   &__item {
     @include flex-setting(column, flex-start, center);
+    display: flex !important;
 
-    width: 31.5%;
+    width: 100%;
 
-    padding-bottom: 25px;
+    padding-bottom: 1.25rem;
 
-    box-shadow: 0 0 5px rgba(153, 153, 153, 0.15);
+    box-shadow: 0px 0px 6px rgba(204, 204, 204, 0.499292);
+    background-color: #fff;
 
     &-frame {
-      max-height: 279px;
-      margin-bottom: 15px;
+      max-height: 200px;
+      min-height: 200px;
+    }
+
+    &-pic {
+      max-height: 200px;
+      min-height: 200px;
+      object-fit: cover;
     }
 
     &:hover {
@@ -35,37 +90,94 @@
 
     @include flex-setting(row, space-between, center);
 
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1rem;
+    padding-top: 0.813rem;
+    padding-right: 1rem;
 
-    margin-bottom: 12px;
+    margin-bottom: 0.688rem;
 
     &-type {
       @include flex-setting(row, space-between, center);
-      @include font-setting($secondary-font, 0.688em, 1.2, 400, rgba(4, 25, 32, 0.5));
+      @include font-setting($secondary-font, 0.688rem, 1, 400, rgba(4, 25, 32, 0.5));
     }
   }
 
   &__description {
-    @include font-setting($primary-font, 0.913em, 1.5em, 400, $text-dark);
-    padding-left: 24px;
-    padding-right: 24px;
+    @include font-setting($primary-font, 0.75rem, 1rem, 400, $text-dark);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 
     margin-top: 0;
     margin-bottom: 16px;
   }
 
   &__link {
-    @include font-setting($secondary-font, 0.913em, 1.5em, 400, rgba(4, 25, 32, 0.5));
-
+    @include font-setting($secondary-font, 0.75rem, 1, 400, $coop-link);
+    @include flex-setting(column, center, center);
     text-decoration: none;
-    align-self: flex-start;
 
-    margin-left: 24px;
+    width: 96px;
+    height: 25px;
+    border: 1px solid #1CB6EA;
+
+    border-radius: 15px;
 
     &:hover {
-      color: $coop-link;
-      transition: 0.2s ease-in;
+      background-color: $coop-link;
+      color: #fff;
+      transition: 0.1s ease-in;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .news-list {
+    margin-bottom: 1.875rem;
+
+    &__item {
+      width: 260px;
+
+      padding-bottom: 1.125rem;
+
+      box-shadow: 0px 0px 5px rgba(153, 153, 153, 0.15);
+
+      &-frame {
+        max-height: 208px;
+        min-height: 208px;
+      }
+
+      &-pic {
+        max-height: 208px;
+        min-height: 208px;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      padding-left: 1.25rem;
+      padding-top: 0.75rem;
+      padding-right: 1.25rem;
+
+      margin-bottom: 0.625rem;
+    }
+
+    &__link {
+      font-size: 0.913rem;
+      color: rgba(4, 25, 32, 0.499066);
+      border: none;
+      width: auto;
+      height: auto;
+
+      text-decoration: none;
+      align-self: flex-start;
+
+      margin-left: 1.25rem;
+
+      &:hover {
+        background-color: transparent;
+        color: $coop-link;
+        transition: 0.2s ease-in;
+      }
     }
   }
 }

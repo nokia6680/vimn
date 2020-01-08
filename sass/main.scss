@@ -2,4 +2,22 @@
   width: 100%;
 
   @include flex-setting(column, flex-start, center);
+
+  &--blog {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main {
+    &--blog {
+      align-self: center;
+      margin: 0 auto;
+      max-width: 980px;
+
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }

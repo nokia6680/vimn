@@ -1,0 +1,15 @@
+.ability {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  padding-top: 1.875rem;
+  padding-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .ability {
+    padding-top: 2.375rem;
+    padding-bottom: 2.375rem;
+  }
+}

@@ -1,0 +1,50 @@
+.team-info {
+  width: 100%;
+
+  padding: 1rem 1rem;
+
+  @include flex-setting(column, flex-start, flex-start);
+
+  &__title {
+    @include font-setting($secondary-font, 1rem, 1, 700, $text-dark);
+    margin: 0;
+    margin-bottom: 0.875rem;
+
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include font-setting($primary-font, 0.75rem, 1.3, 400, #000);
+    margin: 0;
+    margin-bottom: 1.25rem;
+
+    text-decoration: none;
+  }
+
+  &__email {
+    @include font-setting($secondary-font, 0.75rem, 1, 400, #1CB6EA);
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .team-info {
+    padding: 1.125rem 1.25rem;
+
+    &__title {
+      font-size: 1.25rem;
+      margin-bottom: 0.875rem;
+    }
+
+    &__description {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &__email {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,27 +1,98 @@
 .footer {
   width: 100%;
 
-  background-color: #041920;
+  background-color: #000;
 
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
 
   @include flex-setting(column, center, center);
 
-  background-image: url('../img/footer-bg.png');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &--blog {
+    justify-content: flex-start;
+
+    padding-top: 0;
+
+    .footer__logo {
+      padding-top: 1.25rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .footer__container {
+      max-width: 100%;
+
+      padding: 0;
+    }
+
+    .footer-nav {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    .footer-controls {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
 
   &__logo {
+    width: 114px;
+    height: 14px;
     align-self: center;
-    margin-bottom: 1.625rem;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__link-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   &__container {
-    @include flex-setting(column, flex-start, flex-start);
+    @include flex-setting(column, flex-start, center);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
 
-    width: 100%;
-    max-width: 1216px;
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding-bottom: 2.313rem;
+    padding-top: 2.313rem;
+
+    &--blog {
+      padding-top: 0;
+
+      .footer-nav {
+        padding: 0;
+      }
+
+      .footer__container {
+        max-width: 1000px;
+      }
+
+      .footer-controls {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &__logo {
+      width: 130px;
+      height: 16px;
+      margin-bottom: 2.313rem;
+    }
+
+    &__container {
+      padding: 0;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1000px;
+    }
   }
 }

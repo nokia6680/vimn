@@ -1,0 +1,54 @@
+.blog-head {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  margin-bottom: 3rem;
+
+  &__info {
+    width: 100%;
+
+    @include flex-setting(column, flex-start, flex-start);
+
+    &-title {
+      @include font-setting($secondary-font, 1.125rem, 1, 700, $text-dark);
+      margin: 0;
+      margin-bottom: 0.875rem;
+
+      text-transform: uppercase;
+    }
+
+    &-description {
+      @include font-setting($primary-font, 0.875rem, 1.3, 400, #979797);
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .blog-head {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 3.5rem;
+
+    &__info {
+      order: 1;
+
+      &-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.125rem;
+      }
+
+      &-description {
+        font-size: 0.938rem;
+      }
+    }
+
+    &__tag {
+      order: 2;
+    }
+  }
+}

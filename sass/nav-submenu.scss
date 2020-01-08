@@ -1,11 +1,5 @@
 .nav-submenu {
-  position: absolute;
-
-  top: 25px;
-  left: 0;
-  z-index: 5;
-  width: auto;
-  background-color: transparent;
+  display: none;
   border: none;
   visibility: hidden;
   opacity: 0;
@@ -17,32 +11,103 @@
   margin: 0;
   padding: 0;
 
+  width: 100%;
+  margin-top: 0.625rem;
+
+  background-color: rgba(219, 221, 222, 0.95);
+
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
   &__item {
+    @include flex-setting(column, center, center);
+
     position: relative;
-    padding: 8px 13px 8px 13px;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
 
-    border-bottom: 1px solid #ffffff;
-    background-color: rgba(28, 182, 234, 0.35);
+    padding-left: 1.25rem;
+    padding-top: 0.313rem;
+    padding-bottom: 0.313rem;
 
-    &:last-of-type {
+    &:last-child {
       border-bottom: none;
     }
 
     &:hover {
-      background-color: rgba(28, 182, 234, 0.5);
+      text-decoration: underline;
+      text-decoration-color: #fff;
+
+      transition: 0.1s ease-in;
     }
   }
 
   &__link {
-    @include font-setting($secondary-font, 0.875em, 1.2, 400, $text-secondary);
+    @include font-setting($secondary-font, 0.875rem, 1, 400, $text-primary);
+    @include flex-setting(column, center, flex-start);
+
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 0 0 3px #cccccc;
+
+    padding-left: 2.5rem;
 
     width: 100%;
     height: 100%;
 
     cursor: pointer;
     outline: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-submenu {
+    position: absolute;
+    display: block;
+
+    top: 35px;
+    left: 0;
+    z-index: 5;
+    width: auto;
+
+    margin: 0;
+
+    background-color: transparent;
+
+    &__item {
+      align-items: flex-start;
+
+      width: 186px;
+      height: 40px;
+      border-radius: 4px;
+
+      padding: 0;
+
+      margin-bottom: 0.313rem;
+
+      border-bottom: none;
+
+      background-color: rgba(166, 221, 239, 0.8);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+        transition: 0.1s ease-in;
+
+        background-color: #1CB6EA;
+      }
+    }
+
+    &__link {
+      color: $text-secondary;
+      font-size: 0.875rem;
+      align-items: flex-start;
+
+      padding-left: 1.25rem;
+    }
   }
 }

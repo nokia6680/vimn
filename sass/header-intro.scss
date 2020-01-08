@@ -1,8 +1,100 @@
 .header-intro {
   width: 100%;
+  min-height: 184px;
+  max-height: 184px;
 
-  margin-top: -86px;
-  min-height: 628px;
+  &::after {
+    position: absolute;
+    content: '';
 
-  z-index: 1;
+    width: 100%;
+    height: 48px;
+
+    top: 39px;
+    left: 0;
+
+    background: linear-gradient(180deg, #000 0%, rgba(4, 25, 32, 0) 100%);
+  }
+
+  &--channels {
+    background-image: url('../img/channel-banner.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--coop {
+    background-image: url('../img/coop-banner.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--ch {
+    background-image: url('../img/channel-item-banner.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+
+      width: 100%;
+      height: 86px;
+
+      background-image: linear-gradient(to top, #1cb6ea 0%, rgba(4, 25, 32, 0) 100%);
+
+      bottom: 0;
+      left: 0;
+
+      z-index: -1;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header-intro {
+    min-height: 640px;
+    max-height: 640px;
+
+    z-index: 1;
+
+    &::after {
+      height: 80px;
+      top: 108px;
+    }
+
+    &--ch {
+      &::before {
+        position: absolute;
+        content: '';
+
+        width: 100%;
+        height: 320px;
+
+        background-image: linear-gradient(to top, #1cb6ea 0%, rgba(4, 25, 32, 0) 100%);
+
+        bottom: 0;
+        left: 0;
+
+        z-index: -1;
+      }
+    }
+  }
 }

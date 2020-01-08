@@ -1,0 +1,55 @@
+.intro-contacts {
+  width: 100%;
+  @include flex-setting(row, space-between, center);
+
+  margin-bottom: 2.5rem;
+
+  &__social {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    @include flex-setting(column, center, center);
+    @include font-setting($secondary-font, 0.875rem, 1, 400, #000);
+
+    text-decoration: none;
+
+    border: 2px solid #1CB6EA;
+    box-shadow: 0px 0px 5px rgba(28, 182, 234, 0.301347);
+    border-radius: 3px;
+
+    width: 130px;
+    height: 24px;
+
+    transition: 0.1s ease-in;
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #1CB6EA;
+      color: $text-secondary;
+      transition: 0.1s ease-in;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .intro-contacts {
+    margin-bottom: 3.75rem;
+
+    &__social {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+
+    &__link {
+      font-size: 1rem;
+
+      width: 146px;
+      height: 30px;
+    }
+  }
+}

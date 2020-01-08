@@ -1,0 +1,49 @@
+.tag-list {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include flex-setting(row, flex-end, center);
+
+  margin-bottom: 2rem;
+
+  &__item {
+    @include flex-setting(column, center, center);
+    width: auto;
+
+    margin-left: 0.875rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    @include font-setting($primary-font, 1rem, 1, 600, $text-dark);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #000;
+      transition: 0.1s ease-in;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tag-list {
+    margin-bottom: 0;
+
+    &__item {
+      margin-left: 1.875rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

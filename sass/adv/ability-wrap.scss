@@ -1,0 +1,93 @@
+.ability-wrap {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, flex-start);
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  padding-top: 3.125rem;
+
+  &__title {
+    @include font-setting($secondary-font, 1rem, 1, 700, $text-dark);
+    text-transform: uppercase;
+    text-align: left;
+    align-self: flex-start;
+
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include flex-setting(column, flex-start, flex-start);
+
+    &-item {
+      @include flex-setting(column,flex-start, flex-start);
+
+      width: 100%;
+    }
+
+    &-title {
+      @include font-setting($primary-font, 0.875rem, 1.3, 400, $text-dark);
+      width: 100%;
+
+      margin: 0;
+      margin-bottom: 0.625rem;
+    }
+
+    &-description {
+      @include font-setting($primary-font, 0.875rem, 1.3, 400, $text-dark);
+      width: 100%;
+
+      margin: 0;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ability-wrap {
+    width: 100%;
+    max-width: 980px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    padding-top: 1.875rem;
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    &__list {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+
+      margin-bottom: 1.875rem;
+
+      &-item {
+        max-width: 230px;
+      }
+
+      &-title {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+      }
+
+      &-description {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

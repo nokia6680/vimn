@@ -1,0 +1,50 @@
+.ch-item {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, flex-start);
+
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  margin-bottom: 2.625rem;
+
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    @include font-setting($secondary-font, 0.75rem, 1, 700, $text-dark);
+    text-align: left;
+    text-transform: uppercase;
+
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ch-item {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    padding-left: 0;
+    padding-right: 0;
+
+    max-width: 980px;
+
+    margin-bottom: 6.125rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+
+      margin-bottom: 1.875rem;
+    }
+  }
+}

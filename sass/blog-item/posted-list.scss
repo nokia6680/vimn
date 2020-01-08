@@ -1,0 +1,45 @@
+.posted-list {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  margin-bottom: 0.625rem;
+
+  &__item {
+    background: linear-gradient(180deg, rgba(170, 226, 246, 0.63) 0%, rgba(170, 226, 246, 0) 100%);
+    box-shadow: inset 1px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    padding: 1rem 1rem;
+
+    &-name {
+      display: inline-flex;
+      @include font-setting($secondary-font, 0.875rem, 1.3, 700, $text-dark);
+      margin-bottom: 0.625rem;
+      text-transform: uppercase;
+    }
+
+    &-text {
+      @include font-setting($primary-font, 0.875rem, 1.3, 300, $text-dark);
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .posted-list {
+    margin-bottom: 1.25rem;
+
+    &__item {
+      padding: 2.25rem 5rem;
+
+      &-name {
+        margin-bottom: 0.875rem;
+      }
+    }
+  }
+}

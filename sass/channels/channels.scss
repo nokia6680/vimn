@@ -1,0 +1,16 @@
+.channels {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  background-color: #fff;
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .channels {
+    padding-bottom: 6.25rem;
+  }
+}
