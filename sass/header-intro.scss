@@ -68,6 +68,17 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .header-intro {
+    min-height: 200px;
+    max-height: 200px;
+
+    &::after {
+      top: 45px;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .header-intro {
     min-height: 640px;

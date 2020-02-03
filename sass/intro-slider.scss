@@ -209,6 +209,44 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .intro-slider {
+    max-height: 200px;
+    min-height: 200px;
+
+    &:not(.slick-initialized) {
+      height: 200px;
+    }
+
+    .prev-1 {
+      top: 36%;
+    }
+
+    .next-1 {
+      top: 36%;
+    }
+
+    &__item {
+      min-height: 200px;
+      max-height: 200px;
+
+      &::after {
+        bottom: 0;
+        left: 0;
+      }
+
+      &-wrapper {
+        height: 200px;
+        padding-bottom: 1.25rem;
+      }
+
+      &-title {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .intro-slider {
     max-height: 640px;

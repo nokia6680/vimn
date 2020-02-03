@@ -9,6 +9,13 @@
   padding-bottom: 3rem;
 }
 
+@media only screen and (min-width: 360px) {
+  .channels {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .channels {
     padding-bottom: 6.25rem;

@@ -79,7 +79,7 @@ $(window).on('resize', function(e){
       // Запускаем слайдер и записываем в data init-slider = 1
       $('.header-channel__list').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
@@ -112,7 +112,7 @@ $(window).on('resize', function(e){
       // Запускаем слайдер и записываем в data init-slider = 1
       $('.footer-channel__list').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
         arrows: true,

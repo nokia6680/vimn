@@ -145,6 +145,58 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .advantages-list {
+    .advant-prev,
+    .advant-next {
+      width: 10px;
+      height: 18px;
+    }
+
+    &__item {
+      max-width: 340px;
+      height: 180px;
+
+      padding-top: 1.25rem;
+      padding-right: 1.25rem;
+      padding-bottom: 1.25rem;
+      padding-left: 1.25rem;
+    }
+
+    &__info {
+      @include flex-setting(column, flex-start, flex-start);
+
+      width: 180px;
+      height: 100%;
+
+      &-title {
+        font-size: 1rem;
+        margin-bottom: 0.375rem;
+      }
+
+      &-description {
+        font-size: 0.75rem;
+      }
+
+      &-link {
+        font-size: 0.875rem;
+
+        width: 130px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .advantages-list {
+    &__item {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .advantages-list {
     max-width: 890px;

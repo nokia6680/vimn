@@ -69,6 +69,25 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .ability-content {
+    &__description {
+      font-size: 0.875rem;
+    }
+
+    &__list {
+      &-pic {
+        width: 66px;
+        height: 66px;
+      }
+
+      &-description {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .ability-content {
     width: 100%;

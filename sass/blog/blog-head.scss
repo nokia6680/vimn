@@ -25,6 +25,23 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .blog-head {
+    margin-bottom: 3.25rem;
+
+    &__info {
+      &-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+      }
+
+      &-description {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .blog-head {
     width: 100%;

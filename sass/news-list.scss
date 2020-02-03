@@ -10,6 +10,10 @@
 
   position: relative;
 
+  .slick-list div {
+    @include flex-setting(row, center, center);
+  }
+
   .news-prev,
   .news-next {
     position: absolute;
@@ -126,6 +130,76 @@
       background-color: $coop-link;
       color: #fff;
       transition: 0.1s ease-in;
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .news-list {
+    margin-bottom: 1.625rem;
+
+    &__info {
+      padding-top: 0.875rem;
+      margin-bottom: 0.75rem;
+
+      &-type {
+        font-size: 0.75rem;
+      }
+    }
+
+    &__description {
+      font-size: 0.875rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__link {
+      font-size: 0.875rem;
+
+      width: 116px;
+      height: 32px;
+
+      border-radius: 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .news-list {
+    margin-bottom: 1.625rem;
+
+    .news-next,
+    .news-prev {
+      width: 10px;
+      height: 18px;
+    }
+
+    &__item {
+      max-width: 340px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    &__info {
+      padding-top: 0.875rem;
+      margin-bottom: 0.75rem;
+
+      &-type {
+        font-size: 0.75rem;
+      }
+    }
+
+    &__description {
+      font-size: 0.875rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__link {
+      font-size: 0.875rem;
+
+      width: 116px;
+      height: 32px;
+
+      border-radius: 20px;
     }
   }
 }

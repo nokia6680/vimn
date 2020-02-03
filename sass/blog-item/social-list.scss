@@ -79,15 +79,37 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .social-list {
+    &__item {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__link {
+      .fa-facebook-f::before {
+        font-size: 1.125rem;
+      }
+
+      .fa-instagram::before {
+        font-size: 1.125rem;
+      }
+
+      .fa-odnoklassniki::before {
+        font-size: 1.125rem;
+      }
+
+      .fa-youtube::before {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .social-list {
     padding-left: 5rem;
 
     margin-bottom: 1.5rem;
-
-    &__item {
-      width: 30px;
-      height: 30px;
-    }
   }
 }

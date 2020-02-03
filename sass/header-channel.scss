@@ -27,6 +27,16 @@
       height: 44px;
     }
 
+    .slick-slide {
+      @include flex-setting(row, center, center);
+      display: flex !important;
+    }
+
+    .slick-slide div {
+      max-width: 60px;
+      @include flex-setting(row, center, center);
+    }
+
     .ch-prev,
     .ch-next {
       position: absolute;

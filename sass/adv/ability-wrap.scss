@@ -49,6 +49,21 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .ability-wrap {
+    &__title {
+      font-size: 1.25rem;
+    }
+
+    &__list {
+      &-title {
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .ability-wrap {
     width: 100%;

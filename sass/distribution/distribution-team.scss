@@ -49,6 +49,33 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .distribution-team {
+    margin-bottom: 2.875rem;
+
+    &__title {
+      font-size: 1.25rem;
+    }
+
+    &__item {
+      margin-bottom: 1.875rem;
+
+      max-width: 366px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__photo {
+      min-height: 100%;
+      max-height: 100%;
+
+      object-fit: contain;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .distribution-team {
     padding-left: 0;

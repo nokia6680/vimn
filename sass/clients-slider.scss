@@ -70,6 +70,20 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .clients-slider {
+
+    &:not(.slick-initialized) {
+      height: 66px;
+    }
+
+    &__item {
+      width: 66px !important;
+      height: 66px;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .clients-slider {
     padding: 0 104px;

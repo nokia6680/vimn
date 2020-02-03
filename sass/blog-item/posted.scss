@@ -55,6 +55,20 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .posted {
+    &__controls {
+      &-more {
+        font-size: 0.875rem;
+      }
+
+      &-sort {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .posted {
     max-width: 820px;

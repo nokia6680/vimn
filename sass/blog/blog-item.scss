@@ -80,6 +80,48 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .blog-item {
+    margin-bottom: 3.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__info {
+      &-type {
+        font-size: 1rem;
+      }
+
+      &-icon {
+        margin-right: 0.25rem;
+      }
+    }
+
+    &__title {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__frame {
+      max-width: 340px;
+      max-height: 240px;
+      min-height: 240px;
+
+      margin-bottom: 1.25rem;
+    }
+
+    &__description {
+      font-size: 0.875rem;
+      margin-bottom: 0.875rem;
+    }
+
+    &__link {
+      font-size: 1rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .blog-item {
     align-items: flex-start;

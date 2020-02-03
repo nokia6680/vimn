@@ -46,6 +46,29 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .contacts {
+    &__title {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__info {
+      &-text {
+        font-size: 0.875rem;
+      }
+    }
+
+    &__foreign {
+      &-description {
+        font-size: 1rem;
+        margin-bottom: 1.625rem;
+      }
+    }
+  }
+
+}
+
 @media only screen and (min-width: 1024px) {
   .contacts {
     max-width: 980px;

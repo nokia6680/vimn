@@ -120,6 +120,43 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .ch-list {
+    &__item {
+      width: 47%;
+      height: 80px;
+    }
+
+    &--1 {
+      .ch-list__pic {
+        max-height: 22px;
+      }
+    }
+
+    &--2 {
+      .ch-list__pic {
+        max-height: 40px;
+      }
+
+      .ch-list__item {
+        &:nth-child(1) {
+          .ch-list__pic {
+            max-height: 50px;
+            max-width: 100%;
+          }
+        }
+
+        &:nth-child(3) {
+          .ch-list__pic {
+            max-height: 50px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .ch-list {
     align-self: center;

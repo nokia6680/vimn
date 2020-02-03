@@ -20,6 +20,19 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .advantages {
+    padding-top: 2.875rem;
+    padding-bottom: 2.875rem;
+
+    &__title {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+}
+
 @media only screen and (min-width: 1024px) {
   .advantages {
     padding-left: 0;

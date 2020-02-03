@@ -84,6 +84,22 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .nav-list {
+    top: 46px;
+
+    &__item {
+      padding-top: 0.875rem;
+      padding-bottom: 0.875rem;
+    }
+
+    &__pic {
+      right: 1.875rem;
+      top: 1.375rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .nav-list {
     flex-direction: row;

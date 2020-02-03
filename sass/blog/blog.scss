@@ -6,6 +6,12 @@
   padding-bottom: 3rem;
 }
 
+@media only screen and (min-width: 360px) {
+  .blog {
+    padding-bottom: 3.25rem;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .blog {
     padding-bottom: 9.375rem

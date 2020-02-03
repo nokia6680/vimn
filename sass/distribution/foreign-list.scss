@@ -28,6 +28,24 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .foreign-list {
+    &__item {
+      margin-bottom: 1.25rem;
+    }
+
+    &__title,
+    &__name,
+    &__link {
+      font-size: 1rem;
+    }
+
+    &__title {
+      margin-bottom: 0.313rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .foreign-list {
     width: 100%;

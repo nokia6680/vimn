@@ -70,6 +70,23 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .breadcrumbs {
+    padding-top: 1.125rem;
+    margin-bottom: 1.125rem;
+
+    &__item {
+      &::after {
+        right: -16px;
+      }
+      
+      &-text {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .breadcrumbs {
     padding-top: 2.625rem;

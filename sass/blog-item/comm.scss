@@ -23,6 +23,21 @@
   }
 }
 
+
+@media only screen and (min-width: 360px) {
+  .comm {
+    &__title {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__note {
+      font-size: 0.875rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .comm {
     width: 100%;

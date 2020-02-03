@@ -103,6 +103,47 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .article-body {
+    margin-bottom: 2.5rem;
+
+    &__title {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__description {
+      font-size: 0.875rem;
+      margin-bottom: 1.875rem;
+    }
+
+    &__cite {
+      padding-top: 1.875rem;
+      padding-bottom: 1.85rem;
+
+      margin-bottom: 1.625rem;
+
+      &-text {
+        margin-bottom: 1.25rem;
+      }
+
+      &-author {
+        font-size: 0.875rem;
+      }
+    }
+
+    &__frame {
+      @include flex-setting(column, center, center);
+
+      width: auto;
+      height: auto;
+      max-width: 300px;
+      max-width: 100%;
+      margin-bottom: 1.75rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .article-body {
     margin-bottom: 5rem;

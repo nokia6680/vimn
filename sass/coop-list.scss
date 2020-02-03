@@ -147,6 +147,91 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .coop-list {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    &__item {
+      height: 180px;
+
+      padding-top: 0.875rem;
+      padding-right: 0.625rem;
+      padding-bottom: 0.875rem;
+      padding-left: 0.625rem;
+
+    }
+
+    &__wrap {
+      width: 85px;
+      height: 85px;
+    }
+
+    &__info {
+      &-title {
+        font-size: 1rem;
+      }
+
+      &-description {
+        font-size: 0.875rem;
+      }
+
+      &-link {
+        font-size: 0.875rem;
+        height: 32px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .coop-list {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    .coop-next,
+    .coop-prev {
+      width: 10px;
+      height: 18px;
+    }
+
+    &__item {
+      height: 180px;
+      width: 100%;
+
+      padding-top: 0.875rem;
+      padding-right: 0.625rem;
+      padding-bottom: 0.875rem;
+      padding-left: 0.625rem;
+
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+      max-width: 340px;
+    }
+
+    &__wrap {
+      width: 85px;
+      height: 85px;
+    }
+
+    &__info {
+      &-title {
+        font-size: 1rem;
+      }
+
+      &-description {
+        font-size: 0.875rem;
+      }
+
+      &-link {
+        font-size: 0.875rem;
+        height: 32px;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .coop-list {
     padding: 0;

@@ -29,6 +29,25 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .team-info {
+    padding: 1.125rem 1.125rem;
+
+    &__title {
+      @include font-setting($secondary-font, 1rem, 1, 700, $text-dark);
+      margin-bottom: 1.25rem;
+    }
+
+    &__description {
+      font-size: 0.875rem;
+    }
+
+    &__email {
+      font-size: 0.875rem;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .team-info {
     padding: 1.125rem 1.25rem;

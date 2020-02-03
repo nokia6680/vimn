@@ -136,12 +136,46 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .ani-item {
+    margin-bottom: 3.563rem;
+
+    &__title {
+      font-size: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__list {
+      .ani-prev-1,
+      .ani-next-1,
+      .ani-prev-2,
+      .ani-next-2,
+      .ani-prev-3,
+      .ani-next-3 {
+        width: 10px;
+        height: 18px;
+      }
+    }
+
+    &__film {
+      height: 200px;
+
+      max-width: 340px;
+    }
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .ani-item {
+    &__film {
+      max-width: 366px;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .ani-item {
     width: 100%;
-
-    @include flex-setting(column, flex-start, center);
-
     margin-bottom: 6.875rem;
 
     &__wrap {
@@ -169,11 +203,15 @@
       width: 220px;
       height: 150px;
 
+      max-width: 100%;
+
       @include flex-setting(column, center, center);
-      display: flex !important;
 
       position: relative;
       background: linear-gradient(0deg, #1CB6EA 0%, rgba(4, 25, 32, 0.15) 100%);
+
+      margin-left: 0;
+      margin-right: 0;
 
       &--big {
         width: 100%;

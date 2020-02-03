@@ -107,6 +107,42 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .footer-contacts {
+    margin-bottom: 1.25rem;
+
+    &__title {
+      display: none;
+    }
+
+    &__connect {
+      &-title {
+        font-size: 0.937rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &-item {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    &__item {
+      padding-left: 1.25rem;
+      margin-bottom: 1.25rem;
+
+      &-link {
+        font-size: 0.688rem;
+      }
+
+      &-text {
+        font-size: 0.688rem;
+      }
+    }
+  }
+
+}
+
 @media only screen and (min-width: 1024px) {
   .footer-contacts {
     flex-direction: column;

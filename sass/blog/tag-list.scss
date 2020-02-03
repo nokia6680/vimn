@@ -34,6 +34,20 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .tag-list {
+    margin-bottom: 2.25rem;
+
+    &__item {
+      margin-left: 1rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .tag-list {
     margin-bottom: 0;

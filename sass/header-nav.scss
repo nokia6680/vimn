@@ -121,6 +121,57 @@
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .header-nav {
+    transition: 0.2s ease-in;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &__wrapper {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
+
+      transition: 0.2s ease-in;
+    }
+
+    &__logo {
+      width: 114px;
+      height: 14px;
+    }
+
+    /*Открывашка*/
+    &__toggle {
+      width: 25px;
+      height: 14px;
+
+      span:nth-child(1) {
+        top: 0px;
+      }
+
+      span:nth-child(2) {
+        top: 6px;
+      }
+
+      span:nth-child(3) {
+        top: 12px;
+      }
+    }
+
+    &__toggle.open span:nth-child(1) {
+      top: -1px;
+      left: 4px;
+      width: 25px;
+    }
+
+    &__toggle.open span:nth-child(3) {
+      top: 16px;
+      left: 4px;
+      width: 25px;
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .header-nav {
     padding-top: 2.5rem;
