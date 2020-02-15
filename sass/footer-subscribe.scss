@@ -22,13 +22,13 @@
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer-subscribe {
     width: auto;
 
     &__title {
       font-size: 400;
-      font-size: 0.75rem;
+      font-size: 0.813rem;
       margin-bottom: 1rem;
 
       max-width: 355px;

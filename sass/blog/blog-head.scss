@@ -31,7 +31,6 @@
 
     &__info {
       &-title {
-        font-size: 1.25rem;
         margin-bottom: 1.25rem;
       }
 
@@ -42,13 +41,36 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .blog-head {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 
+    margin-bottom: 2.5rem;
+
+    &__info {
+      order: 1;
+
+      &-title {
+        margin-bottom: 0.813rem;
+      }
+
+      &-description {
+        font-size: 0.875rem;
+      }
+    }
+
+    &__tag {
+      order: 2;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .blog-head {
     margin-bottom: 3.5rem;
 
     &__info {

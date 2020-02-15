@@ -1,0 +1,53 @@
+.presskit {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  &__title {
+    @include font-setting($secondary-font, 1rem, 1, 700, $text-dark);
+    text-transform: uppercase;
+    text-align: left;
+    align-self: flex-start;
+
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .presskit {
+    &__title {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .presskit {
+    padding: 0;
+    max-width: 688px;
+
+    margin-bottom: 6rem;
+
+    &__title {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .presskit {
+    max-width: 980px;
+
+    margin-bottom: 10rem;
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}

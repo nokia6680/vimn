@@ -41,7 +41,7 @@
       visibility: visible;
       opacity: 1;
       @include flex-setting(column, flex-start, center);
-      margin-bottom: -0.625rem;
+      margin-bottom: -0.75rem;
     }
 
     &:hover,
@@ -49,6 +49,10 @@
     &:focus {
       background-color: #fff;
       transition: 0.1s ease-in;
+
+      .nav-list__item--submenu {
+        padding-bottom: 0;
+      }
 
       .nav-list__pic {
         transform: rotate(180deg) scale(1.5);
@@ -91,11 +95,51 @@
     &__item {
       padding-top: 0.875rem;
       padding-bottom: 0.875rem;
+
+      &:hover > .nav-submenu,
+      &:active > .nav-submenu {
+        margin-bottom: -0.875rem;
+      }
     }
 
     &__pic {
       right: 1.875rem;
       top: 1.375rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-list {
+    top: 96px;
+
+    &__item {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+
+      &:hover > .nav-submenu,
+      &:active > .nav-submenu {
+        margin-bottom: -2.5rem;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        .nav-list__pic {
+          transform: rotate(180deg) scale(2);
+        }
+      }
+    }
+
+    &__link {
+      padding-left: 3.75rem;
+    }
+
+    &__pic {
+      right: 2.5rem;
+      top: 3rem;
+
+      transform: scale(2);
     }
   }
 }

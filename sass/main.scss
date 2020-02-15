@@ -9,6 +9,25 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .main {
+    &__brands {
+      background-color: transparent;
+      
+      .main-intro__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .main-intro__description {
+        margin-bottom: 0.625rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .main {
     &--blog {

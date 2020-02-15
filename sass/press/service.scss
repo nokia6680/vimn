@@ -1,0 +1,111 @@
+.service {
+  width: 100%;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  @include flex-setting(column, flex-start, flex-start);
+
+  &__filter {
+    order: 2;
+  }
+
+  &__pr {
+    order: 1;
+
+    @include flex-setting(column, flex-start, center);
+    background-color: #F8F8F8;
+    border-radius: 4px;
+
+    width: 100%;
+
+    margin-bottom: 1.875rem;
+
+    padding: 0.625rem 0.625rem;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.2));
+
+    &-title {
+      @include font-setting($secondary-font, 0.875rem, 1, 400, $text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    &-name {
+      @include font-setting($secondary-font, 0.875rem, 1, 700, #1CB6EA);
+      text-transform: uppercase;
+    }
+
+    &-link--tel {
+      @include font-setting($secondary-font, 0.875rem, 1, 400, $text-primary);
+      text-decoration: none;
+      margin-bottom: 0.25rem;
+    }
+
+    &-link--mail {
+      @include font-setting($primary-font, 0.875rem, 1, 400, #1CB6EA);
+      text-decoration: none;
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .service {
+    max-width: 688px;
+    padding: 0;
+    padding-top: 1.25rem;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: relative;
+
+    &__filter {
+      order: 1;
+    }
+
+    &__pr {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      order: 2;
+      width: 310px;
+      min-width: 310px;
+
+      margin-bottom: 1.875rem;
+
+      padding: 1rem 1.25rem;
+
+      &-title {
+        font-size: 0.938rem;
+        margin-bottom: 0.375rem;
+      }
+
+      &-name {
+        font-size: 0.938rem;
+      }
+
+      &-link--tel {
+        font-size: 0.938rem;
+        margin-bottom: 0.375rem;
+      }
+
+      &-link--mail {
+        font-size: 0.938rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .service {
+    max-width: 980px;
+    padding-top: 0;
+
+    &__pr {
+      align-items: flex-start;
+    }
+  }
+}

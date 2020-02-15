@@ -1,0 +1,281 @@
+.manage-list {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, flex-start);
+
+  margin-bottom: 2rem;
+
+  &__title {
+    @include font-setting($secondary-font, 1rem, 1, 700, $text-dark);
+    text-transform: uppercase;
+    text-align: left;
+    align-self: flex-start;
+
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  &__head {
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+    background-color: #DAF3FB;
+  }
+
+  &__wrap {
+    width: 100%;
+    @include flex-setting(column, flex-start, flex-start);
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__team {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @include flex-setting(column, flex-start, center);
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.875rem;
+  }
+
+  &__item {
+    width: 100%;
+
+    @include flex-setting(column, flex-start, flex-start);
+
+    margin-bottom: 1.875rem;
+
+    padding-bottom: 1.25rem;
+    padding-left: 1.25rem;
+
+    border-bottom: 3px solid #8CD8F1;
+    border-left: 3px solid #8CD8F1;
+
+    &-head {
+      width: 100%;
+
+      @include flex-setting(column, flex-start, flex-start);
+
+      margin-bottom: 0.625rem;
+    }
+
+    &-name {
+      @include font-setting($secondary-font, 1rem, 1, 700, #00BFFF);
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 0.625rem;
+    }
+
+    &-title {
+      @include font-setting($secondary-font, 0.875rem, 1.313rem, 500, #00BFFF);
+      margin: 0;
+      margin-bottom: 0.875rem;
+    }
+
+    &-pic {
+      width: 100%;
+      height: auto;
+
+      object-fit: cover;
+
+      margin-bottom: 0.625rem;
+    }
+
+    &-description {
+      @include font-setting($primary-font, 0.75rem, 1.4, 400, $text-primary);
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .manage-list {
+    &__title {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .manage-list {
+    align-items: center;
+
+    &__title {
+      align-self: center;
+      display: inline-flex;
+      margin-bottom: 1.25rem;
+      padding: 0;
+      width: 100%;
+      max-width: 688px;
+    }
+
+    &__head {
+      padding: 0;
+      margin-bottom: 2.5rem;
+    }
+
+    &__wrap {
+      margin: 0 auto;
+      max-width: 688px;
+      align-self: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-height: 447px;
+      object-fit: contain;
+    }
+
+    &__team {
+      max-width: 688px;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      padding: 0;
+    }
+
+    &__item {
+      width: 48%;
+
+      margin-bottom: 2.5rem;
+
+      padding-bottom: 1.25rem;
+      padding-left: 1.25rem;
+
+      border-bottom: 3px solid #8CD8F1;
+      border-left: 3px solid #8CD8F1;
+
+      &-head {
+        width: 100%;
+
+        @include flex-setting(column, flex-start, flex-start);
+
+        margin-bottom: 0.625rem;
+      }
+
+      &-info {
+        width: 100%;
+
+        @include flex-setting(row, space-between, flex-start);
+      }
+
+      &-name {
+        padding-top: 1.25rem;
+      }
+
+      &-title {;
+        margin-bottom: 1.25rem;
+      }
+
+      &-pic {
+        width: 100%;
+        max-width: 135px;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+
+        margin-bottom: 0;
+        margin-right: 1.25rem;
+      }
+
+      &-description {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .manage-list {
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      max-width: 980px;
+    }
+
+    &__head {
+      margin-bottom: 5rem;
+    }
+
+    &__wrap {
+      max-width: 980px;
+
+      padding-top: 1.25rem;
+      padding-bottom: 4.5rem;
+    }
+
+    &__img {
+      max-width: 296px;
+      margin-right: 6.5rem;
+    }
+
+    &__team {
+      max-width: 980px;
+    }
+
+    &__item {
+      width: 50%;
+      max-width: 460px;
+
+      margin-bottom: 5rem;
+
+      padding-bottom: 0;
+      padding-left: 0;
+
+      &-head {
+        margin-bottom: 0;
+        padding-left: 1.25rem;
+      }
+
+      &-info {
+        width: 100%;
+
+        @include flex-setting(row, space-between, flex-start);
+      }
+
+      &-name {
+        padding-top: 1.5rem;
+        margin-bottom: 0.625rem;
+      }
+
+      &-title {;
+        margin-bottom: 1rem;
+      }
+
+      &-pic {
+        max-width: 195px;
+        max-height: 432px;
+        object-fit: contain;
+
+        margin-bottom: 0;
+        margin-right: 1.25rem;
+      }
+
+      &-description {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

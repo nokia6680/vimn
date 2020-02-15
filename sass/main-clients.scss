@@ -4,7 +4,7 @@
   padding-top: 0.625rem;
   padding-bottom: 1rem;
 
-  background-color: rgba(163, 225, 246, 0.45);
+  background-color: #DAF3FB;
 
   transition: 0.1s ease-in;
 
@@ -29,8 +29,23 @@
     padding-bottom: 1rem;
 
     &__title {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-clients {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1.563rem;
+
+    transition: 0.1s ease-in;
+
+    &__title {
+      font-size: 1.125rem;
+      margin-bottom: 0.875rem;
     }
   }
 }
@@ -39,9 +54,6 @@
   .main-clients {
     padding-top: 1.5rem;
     padding-bottom: 3.75rem;
-
-    background-color: #D8D8D8;
-    transition: 0.1s ease-in;
 
     &__wrapper {
       @include container;

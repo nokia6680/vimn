@@ -7,12 +7,19 @@
   padding-right: 1.5rem;
 }
 
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 768px) {
   .animation {
     width: 100%;
-    max-width: 980px;
+    max-width: 688px;
 
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .animation {
+    max-width: 980px;
   }
 }

@@ -88,6 +88,59 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .ability-content {
+    width: 100%;
+
+    background-color: rgba(163, 225, 246, 0.4);
+
+    padding-top: 1.75rem;
+    padding-bottom: 2.5rem;
+
+    &__item-wrap {
+      max-width: 688px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      font-size: 0.813rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__list {
+      width: 100%;
+      max-width: 600px;
+
+      align-self: center;
+
+      padding-left: 0rem;
+      padding-right: 0rem;
+
+      margin-top: 1.875rem;
+
+      &-item {
+        margin-bottom: 2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-pic {
+        margin-right: 2.25rem;
+        width: 30px;
+        height: 30px;
+      }
+
+      &-description {
+        font-size: 0.813rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .ability-content {
     width: 100%;

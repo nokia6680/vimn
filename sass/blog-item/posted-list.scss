@@ -10,8 +10,7 @@
   margin-bottom: 0.625rem;
 
   &__item {
-    background: linear-gradient(180deg, rgba(170, 226, 246, 0.63) 0%, rgba(170, 226, 246, 0) 100%);
-    box-shadow: inset 1px 0px 4px rgba(0, 0, 0, 0.15);
+    background-color: #F8F8F8;
     border-radius: 4px;
 
     padding: 1rem 1rem;
@@ -42,6 +41,26 @@
     }
   }
 
+}
+
+@media only screen and (min-width: 768px) {
+  .posted-list {
+    margin-bottom: 1.25rem;
+
+    &__item {
+      padding: 1.375rem 1.75rem;
+
+      &-name {
+        margin-bottom: 1rem;
+        font-size: 0.813rem;
+      }
+
+      &-text {
+        font-size: 0.813rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {

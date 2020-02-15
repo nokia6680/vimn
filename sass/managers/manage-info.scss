@@ -1,0 +1,77 @@
+.manage-info {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, flex-start);
+
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+
+  border-bottom: 3px solid rgba(28, 182, 234, 0.49);
+
+  &__name {
+    @include font-setting($secondary-font, 1.125rem, 1.313rem, 700, #00BFFF);
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 0.625rem;
+  }
+
+  &__title {
+    @include font-setting($secondary-font, 1rem, 1.313rem, 700, #00BFFF);
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 0.875rem;
+    padding-bottom: 0.875rem;
+
+    border-bottom: 3px solid #D8D8D8;
+  }
+
+  &__description {
+    @include font-setting($primary-font, 0.75rem, 1.4, 400, $text-primary);
+    margin: 0;
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .manage-info {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    &__name {
+      font-size: 1.25rem;
+      margin-bottom: 0.625rem;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+    }
+
+    &__description {
+      font-size: 0.875rem;
+      margin-bottom: 0.625rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .manage-info {
+    padding-top: 1.875rem;
+    padding-bottom: 2.125rem;
+
+    &__name {
+      font-size: 1.125rem;
+      margin-bottom: 1.433rem;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      padding-bottom: 2.625rem;
+      margin-bottom: 2.125rem;
+    }
+
+    &__description {
+      font-size: 0.875rem;
+      margin-bottom: 0.625rem;
+    }
+  }
+}

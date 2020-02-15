@@ -21,15 +21,28 @@
     padding-bottom: 1.25rem;
 
     &__title {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-coop {
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+
+    max-width: 688px;
+
+    &__title {
+      margin-bottom: 0.75rem;
     }
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .main-coop {
-    max-width: 862px;
+    max-width: 980px;
 
     padding-top: 3.563rem;
     padding-bottom: 3.563rem;

@@ -68,27 +68,41 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .ability-list {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 
-    max-width: 780px;
+    max-width: 688px;
 
     padding-left: 0;
     padding-right: 0;
 
-    margin-bottom: 3.125rem;
+    margin-bottom: 2.5rem;
 
     &__item {
-      height: 122px;
+      width: 30%;
+      height: 108px;
       margin-bottom: 0rem;
     }
 
     &__link {
       font-size: 1.5rem;
+      line-height: 1.75rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ability-list {
+    max-width: 780px;
+
+    margin-bottom: 3.125rem;
+
+    &__item {
+      height: 122px;
     }
   }
 }

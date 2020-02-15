@@ -1,0 +1,51 @@
+.request {
+  width: 100%;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  margin-bottom: 2.5rem;
+
+  @include flex-setting(column, flex-start, center);
+
+  &__text {
+    @include font-setting($secondary-font, 0.875rem, 1.5, 400, $text-primary);
+    text-align: center;
+
+    &-b {
+      font-weight: 700;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .request {
+    max-width: 688px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-bottom: 2.5rem;
+
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .request {
+    max-width: 980px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-bottom: 6.5rem;
+    align-items: flex-start;
+
+    &__text {
+      font-size: 1.25rem;
+      text-align: left;
+    }
+  }
+}

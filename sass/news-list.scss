@@ -113,6 +113,13 @@
 
     margin-top: 0;
     margin-bottom: 16px;
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   &__link {
@@ -204,12 +211,78 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .news-list {
+    margin-bottom: 2.5rem;
+
+    &__item {
+      max-width: 220px;
+      margin-left: 0;
+      margin-right: 0;
+
+      &-icon {
+        display: inline-flex;
+        transform: scale(0.7);
+        margin-right: 0;
+      }
+
+      &-frame {
+        max-height: 124px;
+        min-height: 124px;
+      }
+    }
+
+    &__info {
+      padding-top: 0.5rem;
+      margin-bottom: 0.75rem;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+
+      &-type {
+        font-size: 0.5rem;
+      }
+    }
+
+    &__description {
+      font-size: 0.625rem;
+      line-height: 1rem;
+
+      margin-bottom: 1.25rem;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+
+      max-height: 75px;
+      overflow-y: scroll;
+    }
+
+    &__link {
+      border: none;
+      width: auto;
+      height: auto;
+
+      text-decoration: none;
+      align-self: flex-start;
+      margin-left: 0.625rem;
+
+      font-size: 0.75rem;
+
+      &:hover {
+        color: #1CB6EA;
+        background-color: transparent;
+        border: none;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .news-list {
     margin-bottom: 1.875rem;
 
     &__item {
-      width: 260px;
+      width: 280px;
+      max-width: 100%;
 
       padding-bottom: 1.125rem;
 
@@ -225,6 +298,11 @@
         min-height: 208px;
         object-fit: cover;
       }
+
+      &-icon {
+        transform: scale(0.8);
+        margin-right: 0.25rem;
+      }
     }
 
     &__info {
@@ -233,6 +311,19 @@
       padding-right: 1.25rem;
 
       margin-bottom: 0.625rem;
+
+      &-type {
+        font-size: 0.688rem;
+      }
+    }
+
+    &__description {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+      max-height: 80px;
+      overflow-y: visible;
     }
 
     &__link {

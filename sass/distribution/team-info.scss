@@ -21,12 +21,6 @@
 
     text-decoration: none;
   }
-
-  &__email {
-    @include font-setting($secondary-font, 0.75rem, 1, 400, #1CB6EA);
-    margin: 0;
-    text-decoration: none;
-  }
 }
 
 @media only screen and (min-width: 360px) {
@@ -41,9 +35,21 @@
     &__description {
       font-size: 0.875rem;
     }
+  }
+}
 
-    &__email {
+@media only screen and (min-width: 768px) {
+  .team-info {
+    padding: 1rem 1rem;
+
+    &__title {
       font-size: 0.875rem;
+      margin-bottom: 0.625rem;
+    }
+
+    &__description {
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -53,17 +59,12 @@
     padding: 1.125rem 1.25rem;
 
     &__title {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       margin-bottom: 0.875rem;
     }
 
     &__description {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    &__email {
-      font-size: 1rem;
+      font-size: 0.875rem;
     }
   }
 }

@@ -69,10 +69,10 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .posted {
-    max-width: 820px;
-    margin-bottom: 8.75rem;
+    max-width: 630px;
+    margin-bottom: 1.25rem;
 
     &__controls {
       @include flex-setting(row, flex-start, center);
@@ -80,15 +80,33 @@
       width: 100%;
 
       &-more {
+        font-size: 0.813rem;
+      }
+
+      &-sort {
+        font-size: 0.813rem;
+
+        &--order {
+          margin-right: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .posted {
+    max-width: 820px;
+    margin-bottom: 8.75rem;
+
+    &__controls {
+
+      &-more {
         font-size: 1rem;
       }
 
       &-sort {
         font-size: 1rem;
-
-        &--order {
-          margin-right: 1.25rem;
-        }
       }
     }
   }

@@ -16,8 +16,16 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .channels {
+    padding-bottom: 6.25rem;
+    max-width: 688px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .channels {
     padding-bottom: 6.25rem;
+    max-width: 960px;
   }
 }

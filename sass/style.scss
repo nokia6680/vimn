@@ -8,6 +8,7 @@
 @import "header-search.scss";
 @import "nav-list.scss";
 @import "nav-submenu.scss";
+@import "nav-sublist.scss";
 @import "header-intro.scss";
 @import "intro-slider.scss";
 @import "header-channel.scss";
@@ -27,9 +28,7 @@
 @import "footer-controls.scss";
 @import "footer-nav.scss";
 @import "footer-sitemap.scss";
-@import "sitemap-list.scss";
 @import "footer-pages.scss";
-@import "page-list.scss";
 /*blog page*/
 @import "sass/blog/breadcrumbs.scss";
 @import "sass/blog/blog.scss";
@@ -69,3 +68,20 @@
 @import "sass/adv/ability-list.scss";
 @import "sass/adv/ability-content.scss";
 @import "sass/adv/ability-wrap.scss";
+/*Managers*/
+@import "sass/managers/managers.scss";
+@import "sass/managers/manage-list.scss";
+@import "sass/managers/manage-info.scss";
+/*Press*/
+@import "sass/press/service.scss";
+@import "sass/press/filter.scss";
+@import "sass/press/press.scss";
+@import "sass/press/press-list.scss";
+/*Presskit*/
+@import "sass/presskit/presskit.scss";
+@import "sass/presskit/presskit-list.scss";
+/*licensing*/
+@import "sass/licensing/categories.scss";
+@import "sass/licensing/main-examples.scss";
+@import "sass/licensing/examples-slider.scss";
+@import "sass/licensing/request.scss";

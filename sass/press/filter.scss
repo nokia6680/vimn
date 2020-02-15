@@ -1,0 +1,55 @@
+.filter {
+  width: 100%;
+
+  @include flex-setting(row, space-between, center);
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  margin-bottom: 1.875rem;
+
+  &__item {
+    width: auto;
+    @include flex-setting(column, center, center);
+    height: 24px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+
+    cursor: pointer;
+    outline: none;
+
+    @include font-setting($primary-font, 0.875rem, 1, 500, #1CB6EA);
+
+    &.active {
+      color: $text-primary;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: #1CB6EA;
+      color: #fff;
+      transition: 0.2s ease-in;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .filter {
+    width: auto;
+    margin-bottom: 1.875rem;
+
+    &__btn {
+      font-size: 0.938rem;
+    }
+  }
+}

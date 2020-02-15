@@ -62,8 +62,27 @@
     transition: 0.1s ease-in;
 
     &__title {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .main-news {
+    padding-top: 1rem;
+    padding-bottom: 1.875rem;
+
+    background-color: #F8F8F8;
+
+    &__wrapper {
+      padding: 0;
+      max-width: 688px;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      margin-bottom: 1.625rem;
     }
   }
 }
@@ -73,13 +92,11 @@
     padding-top: 1.875rem;
     padding-bottom: 2.5rem;
 
-    background-color: rgba(163, 225, 246, 0.4);
-
     transition: 0.1s ease-in;
 
     &__wrapper {
       padding: 0;
-      max-width: 820px;
+      max-width: 980px;
     }
 
     &__title {

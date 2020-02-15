@@ -49,15 +49,15 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .ch-info {
     width: 100%;
-    max-width: 980px;
+    max-width: 688px;
 
     padding-left: 0;
     padding-right: 0;
 
-    margin-bottom: 3.875rem;
+    margin-bottom: 2.688rem;
 
     &__list {
       width: 100%;
@@ -66,11 +66,34 @@
     }
 
     &__item {
+      max-width: 330px;
+
+      &-title {
+        font-size: 1.125rem;
+        line-height: 1.313;
+        margin-bottom: 2rem;
+      }
+
+      &-description {
+        margin: 0;
+        font-size: 0.813rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ch-info {
+    max-width: 980px;
+
+    margin-bottom: 3.875rem;
+
+    &__item {
       max-width: 476px;
 
       &-title {
         font-size: 1.5rem;
-        line-height: 1.4;
         margin-bottom: 1.5rem;
       }
 

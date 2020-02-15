@@ -1,0 +1,73 @@
+.main-examples {
+  width: 100%;
+  transition: 0.1s ease-in;
+
+  padding-top: 0.625rem;
+  padding-bottom: 1rem;
+
+  margin-bottom: 1.875rem;
+
+  background-color: #DAF3FB;
+
+  &__wrapper {
+    width: 100%;
+    @include flex-setting(column, flex-start, center);
+  }
+
+  &__title {
+    @include font-setting($secondary-font, 1rem, 1, 700, $text-primary);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 0;
+    margin-bottom: 0.813rem;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .main-examples {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    margin-bottom: 1.25rem;
+
+    &__title {
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-examples {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1.563rem;
+    margin-bottom: 2.5rem;
+
+    transition: 0.1s ease-in;
+
+    &__title {
+      font-size: 1.125rem;
+      margin-bottom: 0.875rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-examples {
+    padding-top: 1.5rem;
+    padding-bottom: 3.75rem;
+
+    margin-bottom: 3.75rem;
+
+    &__wrapper {
+      @include container;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 1.375rem;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.examples-slider {
+  width: 100%;
+  position: relative;
+
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  &:not(.slick-initialized) {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 56px;
+  }
+
+  .slick-slide div {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .example-prev,
+  .example-next {
+    position: absolute;
+
+    width: 11px;
+    height: 18px;
+
+    cursor: pointer;
+    outline: none;
+
+    opacity: 0.7;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .example-prev {
+    background-image: url('../img/arrow-left.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+  }
+
+  .example-next {
+    background-image: url('../img/arrow-right.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+  }
+
+  &__item {
+    width: 56px !important;
+    height: 56px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(204, 204, 204, 0.15);
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .examples-slider {
+
+    &:not(.slick-initialized) {
+      height: 66px;
+    }
+
+    &__item {
+      width: 66px !important;
+      height: 66px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .examples-slider {
+    max-width: 564px;
+    padding: 0;
+
+    &:not(.slick-initialized) {
+      height: 84px;
+    }
+
+    .examples-prev {
+      left: -60px;
+    }
+
+    .examples-next {
+      right: -60px;
+    }
+
+    &__item {
+      width: 84px !important;
+      height: 84px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .examples-slider {
+    max-width: 940px;
+
+    &:not(.slick-initialized) {
+      height: 140px;
+    }
+
+    .examples-prev,
+    .examples-next {
+      width: 24px;
+      height: 40px;
+    }
+
+    .examples-prev {
+      left: -24px;
+    }
+
+    .examples-next {
+      right: -24px;
+    }
+
+    &__item {
+      width: 140px !important;
+      height: 140px;
+    }
+  }
+}

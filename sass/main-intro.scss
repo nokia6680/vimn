@@ -8,6 +8,9 @@
 
   @include flex-setting(column, flex-start, center);
 
+  &--brands {
+    background-color: transparent;
+  }
 
   &__wrapper {
     @include flex-setting(column, flex-start, flex-start);
@@ -51,7 +54,43 @@
     padding-bottom: 1.75rem;
 
     &__title {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-intro {
+    padding-top: 3.25rem;
+    padding-bottom: 1.75rem;
+
+    &__wrapper {
+      padding: 0;
+      max-width: 688px;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__text {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__description {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      max-width: 330px;
+
+      margin-bottom: 0;
+
+      &--single {
+        max-width: 688px;
+      }
     }
   }
 }
@@ -62,9 +101,7 @@
     padding-bottom: 3rem;
 
     &__wrapper {
-      padding: 0;
       max-width: 980px;
-      width: 100%;
     }
 
     &__title {
@@ -72,17 +109,9 @@
       margin-bottom: 1.5rem;
     }
 
-    &__text {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-
     &__description {
       font-size: 0.913rem;
-      line-height: 1.5rem;
       max-width: 480px;
-      margin: 0;
 
       &--single {
         max-width: 980px;

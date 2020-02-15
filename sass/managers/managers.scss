@@ -1,0 +1,5 @@
+.managers {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+}

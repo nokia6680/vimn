@@ -140,10 +140,9 @@
       }
     }
   }
-
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer-contacts {
     flex-direction: column;
     justify-content: flex-start;
@@ -157,7 +156,7 @@
 
     &__title {
       display: inline-flex;
-      @include font-setting($secondary-font, 0.875em, 1.2, 700, $text-secondary);
+      @include font-setting($secondary-font, 0.813rem, 1.2, 700, $text-secondary);
 
       margin-top: 0;
       margin-bottom: 0.563rem;
@@ -189,6 +188,14 @@
       &-text {
         font-size: 0.75rem;
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer-contacts {
+    &__title {
+      font-size: 0.875rem;
     }
   }
 }

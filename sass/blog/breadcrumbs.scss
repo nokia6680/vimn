@@ -16,6 +16,7 @@
     list-style: none;
 
     @include flex-setting(row, flex-start, center);
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -79,9 +80,37 @@
       &::after {
         right: -16px;
       }
-      
+
       &-text {
-        font-size: 1.125rem;
+        font-size: 1rem;;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .breadcrumbs {
+    padding-top: 1.875rem;
+    margin-bottom: 1.875rem;
+
+    max-width: 688px;
+    transition: 0.1s ease-in;
+
+    &--blogitem {
+      padding-left: 0;
+    }
+
+    &--channel {
+      padding-left: 0;
+    }
+
+    &__item {
+      &::after {
+        right: -16px;
+      }
+
+      &-text {
+        font-size: 1rem;
       }
     }
   }
@@ -91,6 +120,8 @@
   .breadcrumbs {
     padding-top: 2.625rem;
     margin-bottom: 2.625rem;
+
+    max-width: 960px;
 
     &--blogitem {
       max-width: 980px;

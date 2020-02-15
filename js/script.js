@@ -35,23 +35,23 @@ $(".clients-slider").slick({
   prevArrow: '<div class="prev-2"></div>',
   nextArrow: '<div class="next-2"></div>',
   responsive: [
+		{
+			breakpoint: 9999,
+			settings: {
+				initialSlide: 0,
+				infinite: true,
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				vertical: false,
+				dots: false,
+				arrows: true,
+				speed: 200,
+				prevArrow: '<div class="prev-2"></div>',
+				nextArrow: '<div class="next-2"></div>'
+			}
+		},
     {
-      breakpoint: 9999,
-      settings: {
-        initialSlide: 0,
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        vertical: false,
-        dots: false,
-        arrows: true,
-        speed: 200,
-        prevArrow: '<div class="prev-2"></div>',
-        nextArrow: '<div class="next-2"></div>'
-      }
-    },
-    {
-      breakpoint: 1200,
+      breakpoint: 768,
       settings: {
         initialSlide: 0,
         infinite: true,
@@ -67,51 +67,50 @@ $(".clients-slider").slick({
     }
   ]
 });
-/*Слайдер логотипов*/
-$(window).on('resize', function(e){
-  // Переменная, по которой узнаем запущен слайдер или нет.
-  // Храним её в data
-  var init = $(".header-channel__list").data('init-slider');
-  // Если мобильный
-  if(window.innerWidth < 1280){
-    // Если слайдер не запущен
-    if(init != 1){
-      // Запускаем слайдер и записываем в data init-slider = 1
-      $('.header-channel__list').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: true,
-        autoplay: true,
-        speed: 200,
-        prevArrow: '<div class="ch-prev"></div>',
-        nextArrow: '<div class="ch-next"></div>'
-      }).data({'init-slider': 1});
-    }
-  }
-  // Если десктоп
-  else {
-    // Если слайдер запущен
-    if(init == 1){
-      // Разрушаем слайдер и записываем в data init-slider = 0
-      $('.header-channel__list').slick('unslick').data({'init-slider': 0});
-    }
-  }
-}).trigger('resize');
 
-/*Слайдер логотипов*/
-$(window).on('resize', function(e){
-  // Переменная, по которой узнаем запущен слайдер или нет.
-  // Храним её в data
-  var init = $(".footer-channel__list").data('init-slider');
-  // Если мобильный
-  if(window.innerWidth < 1152){
-    // Если слайдер не запущен
-    if(init != 1){
-      // Запускаем слайдер и записываем в data init-slider = 1
-      $('.footer-channel__list').slick({
+$(".header-channel__list").slick({
+  infinite: true,
+  initialSlide: 0,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+	autoplay: true,
+	prevArrow: '<div class="ch-prev"></div>',
+	nextArrow: '<div class="ch-next"></div>',
+  responsive: [
+		{
+			breakpoint: 9999,
+			settings: {
+				infinite: true,
+				slidesToShow: 10,
+				slidesToScroll: 1,
+				dots: false,
+				arrows: true,
+				autoplay: true,
+				speed: 200,
+				prevArrow: '<div class="ch-prev"></div>',
+				nextArrow: '<div class="ch-next"></div>'
+			}
+		},
+    {
+      breakpoint: 1280,
+      settings: {
         infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+				autoplay: true,
+        speed: 200,
+				prevArrow: '<div class="ch-prev"></div>',
+        nextArrow: '<div class="ch-next"></div>'
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+				infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
@@ -120,18 +119,66 @@ $(window).on('resize', function(e){
         speed: 200,
         prevArrow: '<div class="ch-prev"></div>',
         nextArrow: '<div class="ch-next"></div>'
-      }).data({'init-slider': 1});
+      }
     }
-  }
-  // Если десктоп
-  else {
-    // Если слайдер запущен
-    if(init == 1){
-      // Разрушаем слайдер и записываем в data init-slider = 0
-      $('.footer-channel__list').slick('unslick').data({'init-slider': 0});
+  ]
+});
+
+$(".footer-channel__list").slick({
+  infinite: true,
+  initialSlide: 0,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+	autoplay: true,
+	prevArrow: '<div class="ch-prev"></div>',
+	nextArrow: '<div class="ch-next"></div>',
+  responsive: [
+		{
+			breakpoint: 9999,
+			settings: {
+				infinite: true,
+				slidesToShow: 10,
+				slidesToScroll: 1,
+				dots: false,
+				arrows: true,
+				autoplay: true,
+				speed: 200,
+				prevArrow: '<div class="ch-prev"></div>',
+				nextArrow: '<div class="ch-next"></div>'
+			}
+		},
+    {
+      breakpoint: 1280,
+      settings: {
+        infinite: true,
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+				autoplay: true,
+        speed: 200,
+				prevArrow: '<div class="ch-prev"></div>',
+        nextArrow: '<div class="ch-next"></div>'
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+				infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        speed: 200,
+        prevArrow: '<div class="ch-prev"></div>',
+        nextArrow: '<div class="ch-next"></div>'
+      }
     }
-  }
-}).trigger('resize');
+  ]
+});
 
 /*Слайдер кооперации*/
 $(window).on('resize', function(e){
@@ -139,7 +186,7 @@ $(window).on('resize', function(e){
   // Храним её в data
   var init = $(".coop-list").data('init-slider');
   // Если мобильный
-  if(window.innerWidth < 1280){
+  if(window.innerWidth < 768){
     // Если слайдер не запущен
     if(init != 1){
       // Запускаем слайдер и записываем в data init-slider = 1
@@ -172,7 +219,7 @@ $(window).on('resize', function(e){
   // Храним её в data
   var init = $(".news-list").data('init-slider');
   // Если мобильный
-  if(window.innerWidth < 1280){
+  if(window.innerWidth < 768){
     // Если слайдер не запущен
     if(init != 1){
       // Запускаем слайдер и записываем в data init-slider = 1

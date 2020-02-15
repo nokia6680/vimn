@@ -69,6 +69,43 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+  .contacts {
+    max-width: 688px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    &__title {
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__info {
+      margin-bottom: 2.125rem;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &-text {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin-bottom: 0;
+
+        max-width: 330px;
+      }
+    }
+
+    &__foreign {
+      &-description {
+        font-size: 1.125rem;
+        margin-bottom: 1.25rem;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .contacts {
     max-width: 980px;
@@ -89,6 +126,7 @@
       align-items: flex-start;
 
       &-text {
+        max-width: 480px;
         font-size: 1rem;
         margin-bottom: 0;
       }
