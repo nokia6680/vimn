@@ -1,0 +1,11 @@
+.destination-list {
+  width: 100%;
+
+  @include flex-setting(сolumn, flex-start, center);
+
+  &__item {
+    width: 100%;
+
+    @include flex-setting(column, center, center);
+  }
+}

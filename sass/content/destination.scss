@@ -1,0 +1,10 @@
+.destination {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  margin-top: 1.25rem;
+}
