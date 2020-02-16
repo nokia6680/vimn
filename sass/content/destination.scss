@@ -8,3 +8,23 @@
 
   margin-top: 1.25rem;
 }
+
+@media only screen and (min-width: $tablet) {
+  .destination {
+    max-width: 688px;
+    transition: 0.1s ease-in;
+
+    padding: 0;
+
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .destination {
+    max-width: 980px;
+    margin-top: 1.5rem;
+    margin-bottom: 10rem;
+  }
+}

@@ -12,6 +12,10 @@
     background-color: transparent;
   }
 
+  &--destination {
+    background-color: transparent;
+  }
+
   &__wrapper {
     @include flex-setting(column, flex-start, flex-start);
     padding-left: 1.5rem;

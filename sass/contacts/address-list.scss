@@ -1,0 +1,54 @@
+.address-list {
+  width: 100%;
+
+  @include flex-setting(column, flex-start, center);
+
+  &__item {
+    width: 100%;
+
+    @include flex-setting(column, center, center);
+
+    background-color: #E9E6E6;
+  }
+
+  &__item.tabItem--active {
+    background-color: #1CB6EA;
+
+    .address-list__link {
+      color: #ffffff;
+    }
+  }
+
+  &__link {
+    @include flex-setting(column, center, center);
+    @include font-setting($secondary-font, 1rem, 1, 700, $text-dark);
+
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+
+    height: 100%;
+    width: 100%;
+
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .address-list {
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      width: 50%;
+    }
+
+    &__link {
+      padding-top: 1.376rem;
+      padding-bottom: 1.376rem;
+    }
+  }
+}
