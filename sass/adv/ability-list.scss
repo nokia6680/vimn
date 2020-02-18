@@ -13,8 +13,7 @@
     height: 98px;
     @include flex-setting(column, center, center);
     background-color: #FFFFFF;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
 
     margin-bottom: 2rem;
 

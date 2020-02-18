@@ -15,18 +15,11 @@
     padding: 0 1.25rem 0.625rem 1.25rem;
     background-color: #FFFFFF;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
+    
     height: 320px;
     max-width: 300px;
 
     margin-bottom: 1.875rem;
-
-    &:first-of-type {
-      .presskit-list__item-logo {
-        filter: drop-shadow(0 0 2px #000);
-      }
-    }
 
     &-frame {
       min-height: 131px;

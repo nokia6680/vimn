@@ -116,25 +116,16 @@
 
       width: 186px;
       height: 40px;
-      border-radius: 4px;
 
       padding: 0;
-
-      margin-bottom: 0.313rem;
-
-      border-bottom: none;
-
-      background-color: rgba(166, 221, 239, 0.8);
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+      border-bottom: 1px solid #fff;
+      background-color: rgba(28, 182, 234, 0.35);
 
       &:hover {
         text-decoration: none;
         transition: 0.1s ease-in;
 
-        background-color: #1CB6EA;
+        background-color: rgba(28, 182, 234, 0.65);
       }
     }
 

@@ -13,13 +13,15 @@
     @include flex-setting(column, flex-start, flex-start);
 
     background-color: #F8F8F8;
-    border-radius: 2px;
 
     padding: 0.625rem;
 
     margin-bottom: 1.25rem;
 
-    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1));
+    &:hover {
+      filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.1));
+      transition: 0.2s ease-in;
+    }
 
     &-head {
       width: 100%;

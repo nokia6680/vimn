@@ -27,6 +27,8 @@
     cursor: pointer;
     outline: none;
 
+    text-decoration: none;
+    @include flex-setting(column, center, center);
     @include font-setting($primary-font, 0.875rem, 1, 500, #1CB6EA);
 
     &.active {
